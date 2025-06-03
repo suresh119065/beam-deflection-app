@@ -1,0 +1,13 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Jun  3 12:26:48 2025
+
+@author: suresh
+"""
+
+streamlit
+pandas
+seaborn
+matplotlib
+scikit-learn
+openpyxl
