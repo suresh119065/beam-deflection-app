@@ -32,10 +32,16 @@ if uploaded_file:
     st.write(f"**R² Score:** {model.score(X, y):.4f}")
 
     st.subheader("📉 Load vs Deflection by Material")
-    sns.lineplot(data=df, x='Load_kN', y='Deflection_mm', hue='Material_Type', marker='o')
+fig, ax = plt.subplots()
+sns.lineplot(data=df, x='Load_kN', y='Deflection_mm', hue='Material_Type', marker='o', ax=ax)
+ax.set_title("Load vs Deflection by Material")
+ax.set_xlabel("Load (kN)")
+ax.set_ylabel("Deflection (mm)")
+
+
     plt.xlabel("Load (kN)")
     plt.ylabel("Deflection (mm)")
-    st.pyplot()
+   st.pyplot(fig)
 
     st.subheader("📊 Average Deflection by Material")
     avg_def = df.groupby('Material_Type')['Deflection_mm'].mean()
