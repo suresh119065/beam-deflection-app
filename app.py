@@ -3,8 +3,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
-
-st.set_option('deprecation.showPyplotGlobalUse', False)
+#st.set_option('deprecation.showPyplotGlobalUse', False)
 st.title("Beam Deflection Analysis Web App")
 
 uploaded_file = st.file_uploader("Upload your Excel file", type=["xlsx"])
