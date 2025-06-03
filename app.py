@@ -39,8 +39,6 @@ ax.set_xlabel("Load (kN)")
 ax.set_ylabel("Deflection (mm)")
 
 
-    plt.xlabel("Load (kN)")
-    plt.ylabel("Deflection (mm)")
    st.pyplot(fig)
 
     st.subheader("📊 Average Deflection by Material")
